@@ -4,6 +4,7 @@
 var http = require('http');
 
 var server = http.createServer(function (req, res) {
+    console.log("Request recevied.");
     res.writeHead(200, {'Content-Type': 'text/plain'});
     res.end('Hello node.js\n');
 });
