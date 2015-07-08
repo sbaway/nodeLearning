@@ -10,6 +10,6 @@ handler['/'] = requestHandlers.start;
 handler['/start'] = requestHandlers.start;
 handler['/upload'] = requestHandlers.upload;
 
-console.log(handler);
+/*console.log(handler);*/
 
 server.start(router.route, handler);

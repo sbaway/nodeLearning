@@ -9,14 +9,22 @@ function start(route, handler) {
         var pathname = url.parse(req.url).pathname;
         console.log('Request from ' + pathname + ' recieved.');
 
-        route(handler, pathname);
+        var postData = '';
+        req.setEncoding('utf8');
+        req.addEventListener('data', function(dataChunk) {
+            postData += dataChunk;
+            console.log('Recieved post data chunk ' + dataChunk + '.');
+        });
 
-        res.writeHead(200, {'Content-Type': 'text/plain'});
-        res.write('Hello node!');
-        res.end();
-    }
-    http.createServer(onRequest).listen(8080, '127.0.0.1');
-    console.log('Server running at http://127.0.0.1:8080');
+
+        route(handler, pathname, res);
+
+        /*res.writeHead(200, {'Content-Type': 'text/plain'});
+        res.write(content);
+        res.end();*/
+    };
+    http.createServer(onRequest).listen(1331, '127.0.0.1');
+    console.log('Server running at http://127.0.0.1:1331');
 }
 
 exports.start = start;
