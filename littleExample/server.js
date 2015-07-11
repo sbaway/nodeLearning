@@ -11,13 +11,15 @@ function start(route, handler) {
 
         var postData = '';
         req.setEncoding('utf8');
-        req.addEventListener('data', function(dataChunk) {
+
+        req.addListener('data', function(dataChunk) {
             postData += dataChunk;
             console.log('Recieved post data chunk ' + dataChunk + '.');
         });
 
-
-        route(handler, pathname, res);
+        req.addListener('end', function() {
+            route(handler, pathname, res, req);
+        });
 
         /*res.writeHead(200, {'Content-Type': 'text/plain'});
         res.write(content);
