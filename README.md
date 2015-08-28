@@ -1,10 +1,17 @@
 # nodeLearning
-node.js learning from mooc
-这个是本人自学node.js的项目练习，也包括学习笔记
-学习途径目前是慕课网的Scott老师的《开启新纪元-进击Node.js》课程，当然并不局限于这一个课程。
-课程中老师介绍的网站也会是今后学习的重点途径。
-包括 https://nodejs.org/api/index.html，
-https://www.npmjs.com/，
-以及stackoverflow等。
 
-由于是初学，所以其中的例子可能偏简单，主要是为了记录学习的过程，并通过github督促自己学习。
+自学nodejs的学习笔记。
+
+**入门：**
+
+慕课网的Scott老师的[《开启新纪元-进击Node.js》](http://www.imooc.com/view/348)课程。学习此课程可以快速地对node.js有一个大概了解。包括安装配置node环境，知道其基本用途，了解简单的语法。
+
+**进阶：**
+
+朴灵老师的[《深入浅出nodejs》](http://http://book.douban.com/subject/25768396/ "《深入浅出nodejs》")。
+
+
+学习过程中我会根据需要看一些Node模块的标准：[standardLearning](https://github.com/KongRain/nodeLearning/tree/master/standardLearning)，通过自己翻译来加强记忆。
+
+同时，我也会整理每天看书的笔记：[readingNotes](https://github.com/KongRain/nodeLearning/tree/master/readingNotes)。笔记中的内容基本都是通过读《深入浅出nodejs》得来的，当然也会有部分出自其它网络上论坛或博客。
+
