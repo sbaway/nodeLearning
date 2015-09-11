@@ -18,3 +18,5 @@
 **实践：**
 
 只看书是不够的，学习语言重要的还是实践。我这里找到了alsotang老师的[《Node.js 包教不包会》](https://github.com/alsotang/node-lessons)课程，跟着课程由浅入深地编写一些Node小程序，每天对Node的了解多一点。
+
+运用 Node + MongoDB 实现了一个小型电影网站：[https://github.com/KongRain/Movie-website](https://github.com/KongRain/Movie-website),对node与前台页面的交互及数据的传输过程有了初步的了解。
